@@ -13,7 +13,7 @@
 
     <div class="clock-container">
         <div class="d-flex">
-            <div class="clock-col">
+              <div class="clock-col">
                 <p class="clock-day clock-timer">
                 </p>
                 <p class="clock-label">
@@ -43,27 +43,29 @@
               </div>
         </div>
         <div class="alarm-icon" onclick="openModal()">
-            <img src="./assets/alarm-clock.png" alt="Alarm Icon" >
+            <img id="alarm-img" src="./assets/alarm-clock.png" alt="Alarm Icon" >
         </div>
     </div>
 
     <!-- Alarm Modal -->
-    <div id="alarm-modal" class="modal clock-container">
-        <div class="modal-content">
-        <span class="close" onclick="closeModal()">x</span>
+    <div id="alarm-modal" class="modal clock-container modal-container">
+      <div class="modal-content">
+        <button class="close" onclick="closeModal()">Close</button>
 
-        <h2>Set Alarm</h2>
+        <div class="modal-wrapper">
+          <h2>Set Alarm</h2>
 
-        <div class="input-group">
-            <label for="alarm-time-input">Alarm Time:</label>
-            <input type="datetime-local" id="alarm-time-input" required>
-        </div>
+          <div class="input-group modal-wrapper">
+              <label for="alarm-time-input">Alarm Time</label>
+              <input type="datetime-local" id="alarm-time-input" required>
+          </div>
 
-        <div class="button-group">
-            <button id="set-alarm-button" onclick="setAlarm()">Set Alarm</button>
-            <button id="stop-alarm-button" onclick="stopAlarm()" disabled>Stop Alarm</button>
+          <div class="button-group">
+              <button id="set-alarm-button" onclick="setAlarm()">Set Alarm</button>
+              <button id="stop-alarm-button" onclick="stopAlarm()" disabled>Stop Alarm</button>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
 
 

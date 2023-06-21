@@ -30,7 +30,7 @@ body {
   padding: 60px 20px;
   box-shadow: 1px 1px 5px rgba(255, 255, 255, .15), 0 15px 90px 30px rgba(0, 0, 0, .25);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .clock-col {
   text-align: center;
@@ -72,8 +72,67 @@ body {
   margin: 0 20px 0 0 ;
   opacity: .35;
 }
-.modal{
+.modal-container{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #080808;
+  border-radius: 5px;
+  padding: 60px 60px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, .15), 0 15px 90px 30px rgba(0, 0, 0, .25);
+  display: flex;
+  align-items: flex-start;
   color: #fff;
+  font-family: 'Montserrat', 'sans-serif';
+}
+#alarm-modal{
+  display: none;
+}
+.close{
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 25px;
+  border: none;
+  border-radius:5px;
+  transition: ease-in-out .1s;
+  background-color:rgb(238, 86, 86) ;
+  color: white;
+}
+.close:hover{
+  transform: scale(1.2);
+}
+.modal-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.modal-wrapper h2{
+  font-size: 50px;
+  font-weight: 400;
+}
+.input-group label{
+  font-size: 25px;
+  margin: 0 0 30px 0;
+}
+.input-group input{
+  width: 300px;
+  height: 35px;
+  border: none;
+  font-size: 20px;
+  margin: 0 0 30px 0;
+}
+.button-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-group button{
+  width: 140px;
+  height: 40px;
+  font-size: 20px;
+  transition: ease-in-out .1s;
+}
+.button-group button:hover{
+  transform: scale(1.2);
 }
 
 @media (max-width: 825px) {
