@@ -37,6 +37,7 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## Demo
 Demo1 - https://alarm-clock-01so.onrender.com
+Demo2 - https://saksham8950.github.io/Alarm-Clock/
 
 ## License
 
