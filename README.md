@@ -29,8 +29,6 @@ Click the "Set Alarm" button to activate the alarm.
 
 When the alarm time is reached, the alarm sound will play, and a notification will be displayed.
 
-To snooze the alarm, click the "Snooze" button. The alarm will be temporarily silenced for a specified duration before it rings again.
-
 ## Customization
 
 To change the alarm sound, replace the audio file located in the sounds directory with your preferred sound file. Make sure the new file is in a compatible audio format (e.g., MP3, WAV).
