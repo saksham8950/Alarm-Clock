@@ -44,5 +44,4 @@ This project is licensed under the MIT License.
 
 ## Acknowledgements
 
-Moment.js - Library for date and time manipulation.
 Font Awesome - Icons used in the user interface.
